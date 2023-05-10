@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import CustomAppBar from '../components/common/Appbar';
-import SidebarNavigation from '../components/common/Sidebar';
+import CustomAppBar from '../../components/common/Appbar';
+import SidebarNavigation from '../../components/common/Sidebar';
 
-import useDrawer from '../hooks/useDrawer';
-
+import useDrawer from '../../hooks/useDrawer';
+import { useStyles } from './page_layout';
 const PageLandingLayout = ({ children }) => {
   const classes = useStyles();
   const [mobileOpen, setMobileOpen] = useState(false);

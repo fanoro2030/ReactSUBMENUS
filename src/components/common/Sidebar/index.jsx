@@ -6,12 +6,15 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
-import navigationData from '../../utils/navigationData';
+import { publicRoutes, privateRoutes } from '../../../utils/navigationData';
+
 import { useStyles } from './sidebar_navigation';
 const SidebarNavigation = (props) => {
   const classes = useStyles();
 
   const renderNavigationItems = () => {
+    const navigationData = props.isAuthenticated ? privateRoutes : publicRoutes;
+
     return navigationData.map((item, index) => {
       return (
         <ListItem

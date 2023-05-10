@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useHistory } from 'react-router';
+import * as useHistory from 'react-router';
 
 const useDrawer = () => {
   const history = useHistory();

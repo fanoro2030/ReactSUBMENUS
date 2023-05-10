@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Switch, Route, Redirect, useRouteMatch } from 'react-router';
 
 const RouteWithSubRoutes = (route) => {
@@ -37,4 +37,4 @@ const Routes = ({ routes }) => {
   );
 };
 
-export default Routes;
+export default Routes;*/
